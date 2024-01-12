@@ -1,0 +1,21 @@
+
+models:
+
+  Video:
+    title: string
+    synopsis: longtext nullable
+    duration: decimal:8,2
+  Comment:
+    user_id: id
+    video_id: id
+    content: longtext
+    approved: boolean
+  Watch:
+    user_id: id
+    video_id: id
+    completed_at: datetime
+    timestamps: false
+
+
+controllers:
+  # ...
