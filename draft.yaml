@@ -27,7 +27,7 @@ controllers:
 
   Comment:
     create:
-    render: comment.create
+      render: comment.create
     store:
       validate: content
       save: comment
