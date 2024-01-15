@@ -16,3 +16,59 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::resource('video', App\Http\Controllers\VideoController::class)->only('index', 'show');
+
+Route::resource('comment', App\Http\Controllers\CommentController::class)->only('create', 'store');
+
+Route::resource('watch', App\Http\Controllers\Api\WatchController::class)->only('store');
+
+
+Route::resource('video', App\Http\Controllers\VideoController::class)->only('index', 'show');
+
+Route::resource('comment', App\Http\Controllers\CommentController::class)->only('create', 'store');
+
+Route::resource('watch', App\Http\Controllers\Api\WatchController::class)->only('store');
+
+
+Route::resource('video', App\Http\Controllers\VideoController::class)->only('index', 'show');
+
+Route::resource('comment', App\Http\Controllers\CommentController::class)->only('create', 'store');
+
+Route::resource('watch', App\Http\Controllers\Api\WatchController::class)->only('store');
+
+
+Route::resource('video', App\Http\Controllers\VideoController::class)->only('index', 'show');
+
+Route::resource('comment', App\Http\Controllers\CommentController::class)->only('create', 'store');
+
+Route::resource('watch', App\Http\Controllers\Api\WatchController::class)->only('store');
+
+
+Route::resource('video', App\Http\Controllers\VideoController::class)->only('index', 'show');
+
+Route::resource('comment', App\Http\Controllers\CommentController::class)->only('create', 'store');
+
+Route::resource('watch', App\Http\Controllers\Api\WatchController::class)->only('store');
+
+
+Route::resource('video', App\Http\Controllers\VideoController::class)->only('index', 'show');
+
+Route::resource('comment', App\Http\Controllers\CommentController::class)->only('create', 'store');
+
+Route::resource('watch', App\Http\Controllers\Api\WatchController::class)->only('store');
+
+
+Route::resource('video', App\Http\Controllers\VideoController::class)->only('index', 'show');
+
+Route::resource('comment', App\Http\Controllers\CommentController::class)->only('create', 'store');
+
+Route::resource('watch', App\Http\Controllers\Api\WatchController::class)->only('store');
+
+
+Route::resource('video', App\Http\Controllers\VideoController::class)->only('index', 'show');
+
+Route::resource('comment', App\Http\Controllers\CommentController::class)->only('create', 'store');
+
+Route::resource('watch', App\Http\Controllers\Api\WatchController::class)->only('store');

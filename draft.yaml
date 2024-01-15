@@ -5,6 +5,8 @@ models:
     title: string
     synopsis: longtext nullable
     duration: decimal:8,2
+    relationships:
+      hasMany: Comment
   Comment:
     user_id: id
     video_id: id
@@ -19,12 +21,7 @@ models:
 
 controllers:
   Video:
-    index:
-      query: all
-      render: video.index with:comments
-    show:
-      render: video.show with:comments
-
+    resource: index, show
   Comment:
     create:
       render: comment.create
@@ -41,3 +38,5 @@ controllers:
       validate: user_id, video_id
       save: watch
       respond: 204
+
+seeders: Video, Comment, Watch
